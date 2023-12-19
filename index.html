@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <main>
-        <article>
-            <img src="/img/avatar.png">
-            <h1>Imię nazwisko</h1>
-            <p>frontend developer</p>
-            <p>Programista z <span>kilkunastoletnim doświadczeniem</span>, fotograf, operator drona, właściciel Sokoła Millennium (na razie tylko z Lego), <span>prelegent i szkoleniowiec</span>. Uwielbia eksperymentować z nowymi technologiami, w swojej twórczości ocierając się o sztukę.</p>
-            <p>W sieci: <a href="#">Facebook</a>, <a href="#">GitHub</a>, <a href="#">Instagram</a>.</p>
-        </article>
+    <main class="main">
+        <article class="card">
+            <img class="card__img" src="/img/avatar.png">
+            <header>
+                <h1 class="card__heading">Imię nazwisko</h1>
+                <p class="card__position">frontend developer</p>
+            </header>
+            <p class="card__content">Programista z <span>kilkunastoletnim doświadczeniem</span>, fotograf, operator drona, właściciel Sokoła Millennium (na razie tylko z Lego), <span>prelegent i szkoleniowiec</span>. Uwielbia eksperymentować z nowymi technologiami, w swojej twórczości ocierając się o sztukę.</p>
+             <p class="card__content">W sieci: <a class="card__link" href="#">Facebook</a>, <a class="card__link" href="#">GitHub</a>, <a class="card__link" href="#">Instagram</a>.</p>
+            </article>
     </main>
 </body>
 </html>
