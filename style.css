@@ -37,6 +37,10 @@
     line-height: 1.375;
 }
 
+.card__content--highlight {
+    color: #ED6D05;
+}
+
 .card__heading {
     font-size: 36px;
 }
@@ -46,6 +50,15 @@
     flex-direction: column;
     gap: 24px;
     flex: 0 1 380px;
+}
+
+.card__link {
+    color: #E20613;
+    text-decoration: none;
+}
+
+.card__link::hover {
+    text-decoration: underline;
 }
 
 .card__position {
