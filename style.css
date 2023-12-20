@@ -12,6 +12,7 @@
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    padding: 16px;
 }
 
 .card {
@@ -20,6 +21,9 @@
     padding: 32px;
     display: flex;
     align-items: flex-start;
+    flex: 0 1 616px;
+    flex-flow: row wrap;
+    gap: 24px;
 }
 
 .card__img,
@@ -29,6 +33,23 @@
     margin: 0;
 }
 
+.card__content {
+    line-height: 1.375;
+}
+
 .card__heading {
     font-size: 36px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 0 1 380px;
+}
+
+.card__position {
+    font-size: 18px;
+    font-style: italic;
+    color: #545454;
 }
