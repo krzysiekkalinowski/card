@@ -1,0 +1,78 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    background: #2C2141;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 16px;
+}
+
+.card {
+    background: #F8F8F8;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 616px;
+    flex-flow: row wrap;
+    gap: 24px;
+    justify-content: center;
+
+    &__content,
+    &__heading,
+    &__heading,
+    &__position {
+        margin: 0;
+    }
+
+    &__content {
+        line-height: 1.375;
+
+        &--highlight {
+            color: #ED6D05;
+        }
+    }
+
+    &__heading {
+        font-size: 36px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex: 0 1 380px;
+    }
+
+    &__link {
+        color: #E20613;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__position {
+        font-size: 18px;
+        font-style: italic;
+        color: #545454;
+    }
+}
+
+.card__content,
+.card__heading,
+.card__heading,
+.card__position {
+    margin: 0;
+}
